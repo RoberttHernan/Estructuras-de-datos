@@ -1,2 +1,19 @@
-# Estructuras-de-datos
-Colección de implementaciones de estructuras de datos fundamentales como listas, pilas, colas, árboles y grafos, desarrolladas en distintos lenguajes de programación. Incluye ejemplos prácticos, pruebas y explicaciones para facilitar el aprendizaje y la comprensión de su funcionamiento y aplicaciones.
+# Estructuras de Datos
+
+Coleccion de proyectos que implementan estructuras de datos fundamentales en C++. Cada proyecto aplica multiples estructuras en un contexto practico y funcional, demostrando su uso real mas alla de implementaciones aisladas. El objetivo del repositorio es servir como portafolio tecnico que evidencie el dominio de estructuras lineales, no lineales y sus algoritmos asociados.
+
+## Proyectos
+
+### Scrabble en C++ (`Scrabble C++/`)
+
+Implementacion del juego de mesa Scrabble para dos jugadores en consola. El proyecto integra cinco estructuras de datos personalizadas para representar cada componente del juego:
+
+- **Matriz Dispersa** (lista ortogonal enlazada): tablero de juego NxN que solo almacena casillas con contenido.
+- **Arbol Binario de Busqueda (ABB)**: registro de jugadores ordenado lexicograficamente por nombre de usuario.
+- **Cola FIFO**: bolsa de fichas con la distribucion oficial del Scrabble en espanol (~95 fichas).
+- **Lista Doblemente Enlazada Circular**: mano de cada jugador (7 fichas), con iteracion continua.
+- **Lista Simple**: almacenamiento auxiliar para casillas especiales, jugadas en curso e historial de puntajes.
+
+La configuracion del tablero (dimension, casillas especiales, diccionario) se carga desde un archivo JSON externo usando la libreria `nlohmann/json`. El sistema genera reportes graficos de las estructuras internas en formato Graphviz.
+
+Lenguaje: C++11 | Dependencias: Graphviz, nlohmann/json (incluida)

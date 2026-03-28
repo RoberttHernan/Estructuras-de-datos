@@ -1,0 +1,19 @@
+# Compiled binaries
+*.exe
+*.out
+main
+a.out
+
+# Generated Graphviz output
+*.dot
+*.png
+
+# Build artifacts
+*.o
+*.a
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
