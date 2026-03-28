@@ -1,0 +1,19 @@
+# Compiled binaries
+ejecutable
+a.out
+*.o
+*.a
+
+# Disk image files generated at runtime
+*.dsk
+*.disk
+
+# Graphviz reports generated at runtime
+*.dot
+*.png
+
+# IDE configuration
+.vscode/
+.idea/
+*.swp
+*.swo
