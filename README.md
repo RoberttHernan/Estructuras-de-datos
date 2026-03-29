@@ -4,6 +4,22 @@ Coleccion de proyectos que implementan estructuras de datos fundamentales en C++
 
 ## Proyectos
 
+### Interprete V-Lang Cherry en Go (`Interprete Vlang Cherry/`)
+
+Interprete de recorrido de arbol (tree-walking interpreter) para un lenguaje de programacion personalizado con sintaxis inspirada en V-Lang. Demuestra el pipeline completo de un compilador/interprete: analisis lexico, sintactico y semantico, construccion de AST y evaluacion.
+
+Tecnologias y conceptos implementados:
+- **ANTLR4**: generacion automatica del lexer y parser en Go a partir de una gramatica `.g4`.
+- **Patron Visitor**: transformacion del CST de ANTLR a un AST personalizado.
+- **Interprete de recorrido de arbol**: evaluacion del AST con alcance lexico estatico mediante cadena de entornos.
+- **Generacion de codigo ARM64**: emision de ensamblador a partir del AST.
+- **Interfaz grafica con Fyne**: editor de codigo integrado con consola y reportes visuales.
+- **Reportes**: visualizacion del AST en Graphviz y tabla de simbolos en CSV/PDF.
+
+Lenguaje: Go 1.22 | Dependencias: ANTLR4 runtime, Fyne v2, gofpdf
+
+---
+
 ### Sistema de Archivos en C++ (`P2/`)
 
 Simulador de sistema de archivos que opera sobre discos virtuales (archivos binarios). Implementa los formatos ext2 y ext3 con particiones primarias, extendidas y logicas administradas mediante MBR y EBR. Incluye un interprete de comandos propio con analizador lexico (maquina de estados finita) y parser.

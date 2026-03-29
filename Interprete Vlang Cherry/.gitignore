@@ -1,0 +1,24 @@
+# Compiled binaries and build output
+salida
+salida.o
+salida.s
+*.exe
+*.out
+
+# Runtime-generated report files
+*.dot
+*.png
+*.pdf
+*.txt
+
+# Keep source test inputs
+!entradas/
+
+# ANTLR generated Java files (only Go outputs in parser/ are needed)
+.antlr/
+
+# IDE configuration
+.vscode/
+.idea/
+*.swp
+*.swo
